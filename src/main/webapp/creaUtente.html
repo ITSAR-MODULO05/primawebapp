@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CREAZIONE UTENTE</title>
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+	<div id="main">
+		<form method="POST" action="/esempiowebapp/addUser"	enctype="application/x-www-form-urlencoded" autocomplete="on">
+			<div class="row">
+				<div class="col-25">
+					<label for="fname">Nome</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="fname" size="40" maxlength="40" name="nome"
+						placeholder="Nome.." required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Cognome</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="lname" size="40" maxlength="40"
+						name="cognome" placeholder="Cognome.." required>
+				</div>
+			</div>
+			<div class="row">
+				<input type="radio" id="male" name="sesso" value="maschio" required> 
+				<label for="male">Maschio</label><br> 
+				<input type="radio" id="female"	name="sesso" value="femmina"> 
+				<label for="female">Femmina</label><br>
+				<input type="radio" id="other" name="sesso" value="altro">
+				<label for="other">Altro</label>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="anno">Anno di nascita</label>
+				</div>
+				<div class="col-75">
+					<input type="date" id="anno" size="40" maxlength="40"
+						name="anno" placeholder="Anno di nascita.." required/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="eMail">e-mail</label>
+				</div>
+				<div class="col-75">
+					<input type="email" id="eMail" size="40" maxlength="40"
+						name="eMail" placeholder="e-Mail.." required/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="nazione">Nazione</label>
+				</div>
+				<div class="col-75">
+				<label for="nazione">Inserisci la nazione:</label>
+					<input type="text" id="nazione" size="40" maxlength="40"
+						name="nazione" placeholder="Nazione.." required/>
+				</div>
+			</div>
+			<input type="SUBMIT" value="inserisci">
+		</form>
+	</div>
+	<div>
+		<a class="navigate" href="./index.html">Torna alla pagina principale</a>
+	</div>
+</body>
+</html>
