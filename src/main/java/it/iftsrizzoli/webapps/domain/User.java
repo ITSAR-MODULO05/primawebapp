@@ -14,7 +14,7 @@ public class User implements Serializable {
 	private String annoDiNascita;
 	private String eMail;
 	private String nazione;
-	public int id;
+	private int id;
 
 	public User() {
 		super();
