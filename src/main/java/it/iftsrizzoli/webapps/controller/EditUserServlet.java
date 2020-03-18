@@ -43,6 +43,9 @@ public class EditUserServlet extends HttpServlet {
 		User user = new User(request.getParameter("nome"), request.getParameter("cognome"),
 				request.getParameter("sesso"), request.getParameter("anno"), request.getParameter("eMail"),
 				request.getParameter("nazione"));
+		
+		int id = Integer.parseInt(request.getParameter("id"));
+		user.setId(id);
 
 		log.debug("Modifica dell'utente: {} ", user);
 		if (service.updateUser(user).isResult()) {
